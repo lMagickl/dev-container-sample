@@ -1,0 +1,26 @@
+{
+  "features": {
+    "ghcr.io/devcontainers/features/node:latest": {}
+  },
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "runArgs": [
+        "-v",
+        "${PWD}/.devcontainer/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini"
+      ],
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "fknop.vscode-npm",
+        "christian-kohler.npm-intellisense",
+        "gamunu.vscode-yarn",
+        "Dang.package-json-helper",
+      ]
+    }
+  },
+}

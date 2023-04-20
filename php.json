@@ -1,0 +1,17 @@
+{
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      "runArgs": [
+        "-v",
+        "${PWD}/.devcontainer/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini"
+      ],
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "xdebug.php-pack",
+        "bmewburn.vscode-intelephense-client",
+        "junstyle.php-cs-fixer",
+      ]
+    }
+  },
+}

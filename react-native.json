@@ -1,0 +1,5 @@
+{
+  "extensions": [
+    "msjsdiag.vscode-react-native",
+  ]
+}
