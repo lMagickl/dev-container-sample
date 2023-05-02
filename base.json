@@ -31,8 +31,6 @@
         "ms-vscode.powershell",
         "mikestead.dotenv",
         "richie5um2.vscode-sort-json",
-        "mhutchie.git-graph",
-        "quentinguidee.gitignore-ultimate",
         "mdickin.markdown-shortcuts",
       ]
     }
