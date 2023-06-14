@@ -6,7 +6,10 @@
     // Configure properties specific to VS Code.
     "vscode": {
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
+        "terminal.integrated.defaultProfile.linux": "bash",
+         "remoteEnv": {
+          "NODE_EXTRA_CA_CERTS": "/etc/ssl/certs/ca-certificates.crt"
+        }
       },
       "runArgs": [
         "-v",
