@@ -1,13 +1,11 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 {
-  "name": "devcontainer",
-  "dockerComposeFile": "docker-compose.yml",
+  "name": "${localWorkspaceFolderBasename}-devcontainer",
+  "dockerComposeFile": "../docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/var/www/${localWorkspaceFolderBasename}",
   // For use with PHP or Apache (e.g.php -S localhost:8080 or apache2ctl start)
-  "forwardPorts": [
-    8080
-  ],
+  "forwardPorts": [],
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {},
   // Use 'postCreateCommand' to run commands after the container is created.
@@ -15,11 +13,10 @@
   "customizations": {
     // Configure properties specific to VS Code.
     "vscode": {
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
-      },
+      "settings": {},
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
+        "discretegames.f5anything",
         "EditorConfig.EditorConfig",
         "aaron-bond.better-comments",
         "yatki.vscode-surround",
@@ -31,10 +28,19 @@
         "ms-vscode.powershell",
         "mikestead.dotenv",
         "richie5um2.vscode-sort-json",
+        "mhutchie.git-graph",
+        "quentinguidee.gitignore-ultimate",
+        "Postman.postman-for-vscode",
+        "jock.svg",
+        "fknop.vscode-npm",
+        "christian-kohler.npm-intellisense",
+        "Dang.package-json-helper",
         "mdickin.markdown-shortcuts",
       ]
     }
   },
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-  // "remoteUser": "root"
+  "remoteUser": "${localWorkspaceFolderBasename}-user",
+  "shutdownAction": "none"
+
 }
