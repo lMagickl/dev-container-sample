@@ -1,0 +1,5 @@
+{
+  "extensions": [
+    "AmazonWebServices.aws-toolkit-vscode"
+  ]
+}
